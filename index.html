@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Force: Análisis de Quejas (06/10/2025)</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de color y fuente Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1e40af', // Blue 700
+                        'secondary-gray': '#f3f4f6', // Gray 100
+                        'status-pending': '#f59e0b', // Amber 500
+                        'status-complete': '#10b981', // Emerald 500
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos generales para asegurar la fuente Inter */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Slate 50 */
+        }
+        /* Estilo para que la tabla sea responsiva en dispositivos pequeños */
+        .responsive-table {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+    <div class="max-w-7xl mx-auto bg-white shadow-2xl rounded-xl p-6 md:p-10">
+
+        <!-- Encabezado de la Minuta/Dashboard -->
+        <header class="mb-8 border-b pb-4">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-1">
+                Task Force: Análisis de Quejas
+            </h1>
+            <p class="text-xl text-primary-blue font-semibold">
+                Plan de Trabajo y Acuerdos de Seguimiento
+            </p>
+            <div class="mt-3 text-sm text-gray-600 flex flex-wrap items-center">
+                <span class="mr-4 font-medium">Fecha de Reunión: <span class="text-gray-900 font-bold">06 de Octubre de 2025</span></span>
+                <span class="font-medium">Responsables: Subdirección de Servicios y Subdirección Comercial</span>
+            </div>
+        </header>
+
+        <!-- Sección I: Acciones En Curso -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-l-4 border-primary-blue pl-3">
+                I. Acuerdos y Seguimiento de Acciones (En Curso)
+            </h2>
+
+            <div class="responsive-table">
+                <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                    <thead class="bg-primary-blue text-white">
+                        <tr>
+                            <th class="py-3 px-4 text-left text-xs font-semibold uppercase tracking-wider">No.</th>
+                            <th class="py-3 px-4 text-left text-xs font-semibold uppercase tracking-wider">Acción</th>
+                            <th class="py-3 px-4 text-left text-xs font-semibold uppercase tracking-wider hidden sm:table-cell">Responsables</th>
+                            <th class="py-3 px-4 text-center text-xs font-semibold uppercase tracking-wider w-24">Estado</th>
+                            <th class="py-3 px-4 text-left text-xs font-semibold uppercase tracking-wider">Acuerdos (06/10/2025)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700 divide-y divide-gray-200">
+                        <!-- Fila 1 -->
+                        <tr class="hover:bg-secondary-gray transition-colors duration-150">
+                            <td class="py-4 px-4 font-bold">1</td>
+                            <td class="py-4 px-4 font-medium">Prueba de CRM: 'Alerta' de posible Gestor en Tiendas.</td>
+                            <td class="py-4 px-4 hidden sm:table-cell">Carlos de la Peña / Kevin Zavala</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="inline-block py-1 px-3 text-xs font-semibold rounded-full bg-yellow-100 text-status-pending">En curso</span>
+                            </td>
+                            <td class="py-4 px-4">
+                                <p class="text-sm">**Compromiso:** Carlos de la Peña realizará un encuentro con el regional de Villahermosa para impulsar el uso de la herramienta.</p>
+                                <p class="text-xs mt-1 text-gray-500">**Fecha de cierre:** Prueba solo con las Tiendas de Villahermosa hasta el **31/10/25**.</p>
+                            </td>
+                        </tr>
+                        <!-- Fila 2 -->
+                        <tr class="hover:bg-secondary-gray transition-colors duration-150">
+                            <td class="py-4 px-4 font-bold">2</td>
+                            <td class="py-4 px-4 font-medium">Procedimiento de Atención a Clientes derivados de Autoridad en Módulo de Servicio.</td>
+                            <td class="py-4 px-4 hidden sm:table-cell">Leslie Sánchez / Francisco Torres y Gerentes Comerciales</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="inline-block py-1 px-3 text-xs font-semibold rounded-full bg-yellow-100 text-status-pending">En curso</span>
+                            </td>
+                            <td class="py-4 px-4">
+                                <p class="text-sm">**Compromiso GAO:** Se entregará la **Versión Final (VF)** del procedimiento de Atención a Clientes (autoridad) **esta misma semana**.</p>
+                            </td>
+                        </tr>
+                        <!-- Fila 3 -->
+                        <tr class="hover:bg-secondary-gray transition-colors duration-150">
+                            <td class="py-4 px-4 font-bold">3</td>
+                            <td class="py-4 px-4 font-medium">Refuerzo del PAM en sesiones mensuales.</td>
+                            <td class="py-4 px-4 hidden sm:table-cell">Francisco Torres / Gerentes Comerciales</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="inline-block py-1 px-3 text-xs font-semibold rounded-full bg-yellow-100 text-status-pending">En curso</span>
+                            </td>
+                            <td class="py-4 px-4">
+                                <p class="text-sm">**Compromiso Antonio Ocampo:** Se compartirán los puntos del Plan de Acción Mensual (PAM) para su atención y definición en sesiones de trabajo posteriores.</p>
+                            </td>
+                        </tr>
+                        <!-- Fila 4 -->
+                        <tr class="hover:bg-secondary-gray transition-colors duration-150">
+                            <td class="py-4 px-4 font-bold">4</td>
+                            <td class="py-4 px-4 font-medium">Video de 3 minutos sobre etapas del PAM.</td>
+                            <td class="py-4 px-4 hidden sm:table-cell">Antonio Ocampo</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="inline-block py-1 px-3 text-xs font-semibold rounded-full bg-yellow-100 text-status-pending">En curso</span>
+                            </td>
+                            <td class="py-4 px-4">
+                                <p class="text-sm">**Pendiente:** Creación de un video de **1:30 minutos** para ser presentado en la próxima sesión. (Ya se compartieron 3 videos de refuerzo).</p>
+                            </td>
+                        </tr>
+                        <!-- Fila 5 -->
+                        <tr class="hover:bg-secondary-gray transition-colors duration-150">
+                            <td class="py-4 px-4 font-bold">5</td>
+                            <td class="py-4 px-4 font-medium">Comunicación telefónica con Coordinadores sobre flujo de citas.</td>
+                            <td class="py-4 px-4 hidden sm:table-cell">Leslie Sánchez/Gerentes Comerciales</td>
+                            <td class="py-4 px-4 text-center">
+                                <span class="inline-block py-1 px-3 text-xs font-semibold rounded-full bg-yellow-100 text-status-pending">En curso</span>
+                            </td>
+                            <td class="py-4 px-4">
+                                <p class="text-sm">**Estatus:** Se mantendrá **En Curso** hasta que la **VF del Procedimiento (Acción 2)** sea formalmente acordada.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Sección II: Acciones Finalizadas -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-l-4 border-status-complete pl-3">
+                II. Acciones Finalizadas (Cierre Confirmado al 06/10/2025)
+            </h2>
+
+            <ul class="space-y-4">
+                <li class="p-4 bg-green-50 rounded-lg flex items-start">
+                    <svg class="w-6 h-6 text-status-complete mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <p class="font-semibold text-gray-900">1. Elaboración de materiales de capacitación y concientización.</p>
+                        <!-- Se aplica negrita a las palabras clave -->
+                        <p class="text-sm text-gray-600">**Rocío Ramírez** confirma la **instalación** y **uso** del material solicitado.</p>
+                    </div>
+                </li>
+                <li class="p-4 bg-green-50 rounded-lg flex items-start">
+                    <svg class="w-6 h-6 text-status-complete mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <p class="font-semibold text-gray-900">2. Programar visitas de los equipos de servicios y comercial a Módulos.</p>
+                        <!-- Se aplica negrita a las palabras clave -->
+                        <p class="text-sm text-gray-600">La **Subdirección de Servicios** ratifica las **visitas** a los **módulos locales** como parte de la estrategia. No se generará un plan de visitas focalizadas a otras Tiendas del País por el momento.</p>
+                    </div>
+                </li>
+                <li class="p-4 bg-green-50 rounded-lg flex items-start">
+                    <svg class="w-6 h-6 text-status-complete mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <p class="font-semibold text-gray-900">3. Implementar la Campaña Telefónica de 'Alertas Medallia'.</p>
+                        <!-- Se aplica negrita a las palabras clave -->
+                        <p class="text-sm text-gray-600">**Campaña instalada** en el **CAT** a partir del **18/09/25**.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sección III: Próximos Pasos -->
+        <section>
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-l-4 border-gray-500 pl-3">
+                III. Próximos Pasos (Foco del Equipo)
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Tarjeta 1 -->
+                <div class="p-5 bg-secondary-gray rounded-lg shadow-md border-t-4 border-status-pending">
+                    <p class="text-lg font-bold text-gray-900 mb-2">1. Procedimiento VF (Acción 2)</p>
+                    <p class="text-sm text-gray-700">Leslie Sánchez / Francisco Torres darán seguimiento a la entrega de la **Versión Final del Procedimiento** por parte de GAO.</p>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="p-5 bg-secondary-gray rounded-lg shadow-md border-t-4 border-status-pending">
+                    <p class="text-lg font-bold text-gray-900 mb-2">2. Informe Cierre Prueba CRM (Acción 1)</p>
+                    <p class="text-sm text-gray-700">Carlos de la Peña / Kevin Zavala deben dar el informe final de resultados de la prueba en Villahermosa, la cual finaliza el **31/10/25**.</p>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="p-5 bg-secondary-gray rounded-lg shadow-md border-t-4 border-status-pending">
+                    <p class="text-lg font-bold text-gray-900 mb-2">3. Video PAM (Acción 4)</p>
+                    <p class="text-sm text-gray-700">Antonio Ocampo se enfocará en la creación del video de **1:30 minutos** para la siguiente sesión de seguimiento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pie de página/cierre -->
+        <footer class="mt-10 pt-4 border-t text-center text-sm text-gray-500">
+            <p>Documento generado para el seguimiento del Plan de Trabajo Task Force.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
